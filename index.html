@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSpa CPA | Accounting & Tax Services for Medical Spas</title>
+    <meta name="description" content="Specialized accounting, tax planning, and CFO services for medical spas. We understand your industry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-dark: #6d28d9;
+            --primary-light: #a78bfa;
+            --bg: #fafafa;
+            --bg-white: #ffffff;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --accent: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--bg-white);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 10rem 2rem 6rem;
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid var(--primary);
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-image {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Pain Points Section */
+        .pain-points {
+            padding: 6rem 2rem;
+            background: var(--bg-white);
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .pain-card {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .pain-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .pain-card p {
+            color: var(--text-light);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+        }
+
+        /* Why Us Section */
+        .why-us {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+
+        .why-us .section-header h2 {
+            color: white;
+        }
+
+        .why-us .section-header p {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .why-item {
+            text-align: center;
+        }
+
+        .why-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .why-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .why-item p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--bg-white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: white;
+        }
+
+        .testimonial-info h4 {
+            font-size: 1rem;
+        }
+
+        .testimonial-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: var(--bg);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            margin-top: 1rem;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .pain-grid,
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .pain-grid,
+            .services-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">MedSpa<span>.cpa</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Free Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Accounting Built for <span>Med Spas</span></h1>
+                <p>Your med spa isn't a typical business. Your accountant shouldn't be either. We specialize exclusively in medical aesthetics — so you can focus on your patients, not your books.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Get a Free Assessment</a>
+                    <a href="#services" class="btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Med Spa Clients</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">$47M</div>
+                        <div class="stat-label">Tax Savings Found</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15%</div>
+                        <div class="stat-label">Avg. Profit Increase</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Industry Focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="pain-points">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Sound Familiar?</h2>
+                <p>Running a med spa comes with unique financial challenges that generic accountants don't understand.</p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <h3>💉 Inventory Headaches</h3>
+                    <p>Botox, fillers, and injectables require careful tracking. One wrong count and your margins disappear.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>📋 Compliance Confusion</h3>
+                    <p>Medical licensing, HIPAA, state regulations — the rules change constantly and the penalties are real.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>💸 Revenue Recognition</h3>
+                    <p>Memberships, packages, and prepaid treatments make revenue tracking a nightmare.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>👥 Provider Compensation</h3>
+                    <p>Commission structures, splits, and 1099 vs W-2 decisions can make or break your profitability.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>📊 No Industry Benchmarks</h3>
+                    <p>Is your 62% labor cost normal? Your accountant has no idea because they don't know med spas.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>🏦 Growth Capital</h3>
+                    <p>Banks don't understand your business model. Getting financing for expansion feels impossible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Services Designed for Med Spas</h2>
+                <p>Everything you need to run a financially healthy practice.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Monthly Bookkeeping</h3>
+                    <p>Industry-specific chart of accounts, inventory tracking, and financial statements you can actually understand.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Tax Planning & Prep</h3>
+                    <p>Proactive strategies that leverage med spa-specific deductions. We find savings others miss.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Fractional CFO</h3>
+                    <p>Strategic financial guidance without the full-time salary. Perfect for growing practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Payroll & HR</h3>
+                    <p>Provider compensation structures, commission calculations, and compliance handled.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>KPI Dashboards</h3>
+                    <p>Real-time visibility into the metrics that matter: revenue per treatment, provider productivity, and more.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Growth Advisory</h3>
+                    <p>Location expansion, equipment financing, and M&A support from people who know the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="why-us" id="why-us">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Why Med Spa Owners Choose Us</h2>
+                <p>We don't dabble in med spa accounting. It's all we do.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>100% Specialized</h3>
+                    <p>We only work with med spas. Your business isn't a side project to us.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📊</div>
+                    <h3>Industry Benchmarks</h3>
+                    <p>Compare your numbers to 200+ other med spas. Know exactly where you stand.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🤝</div>
+                    <h3>Proactive, Not Reactive</h3>
+                    <p>We reach out before problems happen, not after.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💬</div>
+                    <h3>Always Available</h3>
+                    <p>Quick questions? Text us. No billable hour anxiety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Don't take our word for it.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Finally, an accountant who understands why my injectable costs fluctuate. They found $43,000 in deductions my old CPA missed."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SK</div>
+                        <div class="testimonial-info">
+                            <h4>Dr. Sarah Kim</h4>
+                            <p>Glow Aesthetics, Austin TX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"They helped us structure our second location and got us SBA financing when three banks said no. Game changer."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div class="testimonial-info">
+                            <h4>Maria Rodriguez</h4>
+                            <p>Luxe Med Spa, Miami FL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The monthly dashboard shows me exactly how each provider is performing. I make better decisions now because I actually have data."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JT</div>
+                        <div class="testimonial-info">
+                            <h4>Jennifer Torres</h4>
+                            <p>Renew Med Spa, Denver CO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I used to dread tax season. Now I actually look forward to our quarterly planning calls. They make it make sense."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DP</div>
+                        <div class="testimonial-info">
+                            <h4>Dr. David Park</h4>
+                            <p>Vitality Aesthetics, Seattle WA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+        <div class="section-container">
+            <h2>Ready to Stop Overpaying on Taxes?</h2>
+            <p>Book a free 30-minute assessment. We'll review your current setup and show you exactly what you're missing.</p>
+            <a href="mailto:hello@medspa.cpa" class="btn-primary">Schedule Your Free Call</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="color: white;">MedSpa<span style="color: rgba(255,255,255,0.7);">.cpa</span></a>
+                <p>Specialized accounting and tax services exclusively for medical spas and aesthetic practices.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Bookkeeping</a></li>
+                    <li><a href="#">Tax Planning</a></li>
+                    <li><a href="#">Fractional CFO</a></li>
+                    <li><a href="#">Payroll</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tax Guides</a></li>
+                    <li><a href="#">Benchmarks</a></li>
+                    <li><a href="#">Webinars</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:hello@medspa.cpa">hello@medspa.cpa</a></li>
+                    <li><a href="tel:+18005551234">(800) 555-1234</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MedSpa.cpa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
