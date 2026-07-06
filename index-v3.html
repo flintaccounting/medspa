@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Spa CPA & Accounting | Tax Savings for Med Spas | medspa.cpa</title>
+    <meta name="description" content="Specialized CPA and accounting for med spas. Stop overpaying the IRS. Get books you can trust. Tax planning, bookkeeping, and CFO services built for aesthetic practices.">
+    <meta name="author" content="Flint & Associates, CPA Firm">
+    <link rel="canonical" href="https://medspa.cpa/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://medspa.cpa/">
+    <meta property="og:title" content="Med Spa CPA | Stop Overpaying the IRS">
+    <meta property="og:description" content="Tax and accounting built for med spas. Keep more of what you earn.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop&q=80">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "MedSpa.CPA - Flint & Associates",
+        "description": "Specialized CPA and accounting services for med spas and aesthetic practices.",
+        "url": "https://medspa.cpa",
+        "telephone": "+1-585-210-3242",
+        "email": "advisory@medspa.cpa",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #9333EA;
+            --primary-dark: #7C3AED;
+            --primary-light: #C4B5FD;
+            --primary-soft: #F3E8FF;
+            --primary-glow: rgba(147, 51, 234, 0.15);
+            --accent: #D946EF;
+            --accent-soft: #FAE8FF;
+            --rose: #EC4899;
+            --rose-soft: #FCE7F3;
+            --gold: #CA8A04;
+            --gold-light: #FEF3C7;
+            --text: #1E1B4B;
+            --text-secondary: #4C4678;
+            --text-light: #6B7280;
+            --bg: #FFFFFF;
+            --bg-soft: #FDFCFF;
+            --bg-warm: #FFFBF5;
+            --bg-purple: #FAF5FF;
+            --bg-rose: #FDF2F8;
+            --border: #E9E3F5;
+            --border-light: #F3F0F9;
+            --success: #059669;
+            --success-light: #D1FAE5;
+            --danger: #DC2626;
+            --danger-light: #FEE2E2;
+            --gradient-hero: linear-gradient(135deg, #FAF5FF 0%, #FDF2F8 50%, #FFFBF5 100%);
+            --gradient-soft: linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 100%);
+            --gradient-primary: linear-gradient(135deg, #9333EA 0%, #C026D3 100%);
+            --gradient-accent: linear-gradient(135deg, #D946EF 0%, #EC4899 100%);
+            --gradient-gold: linear-gradient(135deg, #F59E0B 0%, #CA8A04 100%);
+            --shadow-sm: 0 1px 2px rgba(147, 51, 234, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(147, 51, 234, 0.08);
+            --shadow-lg: 0 10px 15px -3px rgba(147, 51, 234, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(147, 51, 234, 0.1);
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+        
+        a { color: inherit; text-decoration: none; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--text);
+        }
+        
+        .logo span { 
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .nav-links a:hover { color: var(--primary); }
+        
+        .nav-phone {
+            color: var(--text) !important;
+            font-weight: 600;
+        }
+        
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: white !important;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+        
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3); }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 8rem 2rem 6rem;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+        
+        .hero-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            animation: pulse-soft 8s ease-in-out infinite;
+        }
+        
+        .hero-blob.blob-1 {
+            top: 10%;
+            right: 20%;
+            width: 400px;
+            height: 400px;
+            background: var(--primary-soft);
+        }
+        
+        .hero-blob.blob-2 {
+            bottom: 20%;
+            left: 10%;
+            width: 300px;
+            height: 300px;
+            background: var(--rose-soft);
+            animation-delay: 2s;
+        }
+        
+        .hero-blob.blob-3 {
+            top: 40%;
+            right: 5%;
+            width: 250px;
+            height: 250px;
+            background: var(--gold-light);
+            animation-delay: 4s;
+        }
+        
+        .hero-image {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            width: 42%;
+            max-width: 480px;
+            z-index: 1;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: var(--shadow-xl);
+            border: 4px solid white;
+        }
+        
+        .hero-float-card {
+            position: absolute;
+            background: white;
+            border-radius: 16px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .hero-float-card.card-1 {
+            bottom: 10%;
+            right: -8%;
+            animation-delay: 0s;
+        }
+        
+        .hero-float-card.card-2 {
+            top: 20%;
+            right: 32%;
+            animation-delay: 1s;
+        }
+        
+        .float-card-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .float-card-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            border: 1px solid var(--border);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+        
+        .hero h1 .highlight {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .hero-stat {
+            text-align: left;
+        }
+        
+        .hero-stat-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+        }
+        
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+        }
+        
+        .btn-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+        }
+        
+        .btn-hero-secondary {
+            background: white;
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-hero-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        /* Logos Bar */
+        .logos-bar {
+            background: white;
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .logos-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .logos-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .logos-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .logo-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .logo-item .icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary-soft);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        /* Problem Section */
+        .problems {
+            padding: 7rem 2rem;
+            background: white;
+        }
+        
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--danger-light);
+            color: var(--danger);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+        
+        .section-header h2 .highlight {
+            background: linear-gradient(135deg, var(--danger) 0%, #B91C1C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .problem-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--danger) 0%, var(--rose) 100%);
+        }
+        
+        .problem-card:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        
+        .problem-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--danger-light);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .problem-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+        
+        .problem-card .problem-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
+        }
+        
+        .problem-card .solution {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 5rem 2rem;
+            background: var(--gradient-soft);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        /* Services */
+        .services {
+            padding: 7rem 2rem;
+            background: var(--bg-purple);
+        }
+        
+        .section-label.primary {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+        
+        .section-header h2 .highlight-primary {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+        
+        .service-card:hover::before { opacity: 1; }
+        
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
+        }
+        
+        .service-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+        
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Deep Dive */
+        .deep-dive {
+            padding: 7rem 2rem;
+            background: white;
+        }
+        
+        .deep-dive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .deep-dive-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            color: var(--text);
+        }
+        
+        .deep-dive-content h2 .highlight {
+            color: var(--primary);
+        }
+        
+        .deep-dive-content > p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .knowledge-list {
+            list-style: none;
+        }
+        
+        .knowledge-list li {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        
+        .knowledge-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--success-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .knowledge-text h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text);
+        }
+        
+        .knowledge-text p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .deep-dive-image {
+            position: relative;
+        }
+        
+        .deep-dive-image img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: var(--shadow-xl);
+            border: 4px solid white;
+        }
+        
+        .deep-dive-card {
+            position: absolute;
+            background: white;
+            border-radius: 16px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            bottom: -20px;
+            right: -20px;
+            max-width: 240px;
+        }
+        
+        .deep-dive-card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .deep-dive-card-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--success-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-size: 1.1rem;
+        }
+        
+        .deep-dive-card-header span {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+        
+        .deep-dive-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Process */
+        .process {
+            padding: 7rem 2rem;
+            background: var(--bg-rose);
+            position: relative;
+        }
+        
+        .process .section-header h2 { color: var(--text); }
+        .process .section-header p { color: var(--text-secondary); }
+        .process .section-label { background: var(--accent-soft); color: var(--accent); }
+        
+        .process-timeline {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .process-step {
+            flex: 1;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+        
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 32px;
+            right: 0;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+        }
+        
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-light), var(--primary));
+        }
+        
+        .process-step:first-child::before { display: none; }
+        .process-step:last-child::after { display: none; }
+        
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 20px rgba(147, 51, 234, 0.3);
+        }
+        
+        .process-step h4 {
+            color: var(--primary);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .process-step p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .process-cta {
+            text-align: center;
+        }
+        
+        /* Qualification */
+        .qualification {
+            padding: 7rem 2rem;
+            background: white;
+        }
+        
+        .qual-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+        
+        .qual-card {
+            border: 2px solid var(--border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .qual-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        
+        .qual-card.for-you {
+            border-color: var(--success);
+            background: linear-gradient(135deg, rgba(5, 150, 105, 0.03) 0%, transparent 100%);
+        }
+        
+        .qual-card.not-for-you {
+            border-color: var(--danger);
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.03) 0%, transparent 100%);
+        }
+        
+        .qual-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .qual-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        
+        .for-you .qual-icon { background: var(--success); color: white; }
+        .not-for-you .qual-icon { background: var(--danger); color: white; }
+        
+        .qual-header h3 { font-size: 1.15rem; font-weight: 700; color: var(--text); }
+        
+        .qual-list { list-style: none; }
+        
+        .qual-list li {
+            padding: 0.6rem 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .for-you .qual-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+        
+        .not-for-you .qual-list li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: var(--danger);
+            font-weight: 700;
+        }
+        
+        .qual-cta { text-align: center; }
+        
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 7rem 2rem;
+            background: var(--gradient-soft);
+        }
+        
+        .testimonials .section-header h2 { color: var(--text); }
+        .testimonials .section-label { background: white; color: var(--primary); border: 1px solid var(--border); }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s;
+            position: relative;
+            border: 1px solid var(--border-light);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .testimonial-quote {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .testimonial-rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+            color: #FBBF24;
+        }
+        
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-soft);
+        }
+        
+        .author-info h4 { font-size: 1rem; font-weight: 700; color: var(--text); }
+        .author-info p { font-size: 0.85rem; color: var(--text-secondary); }
+        
+        /* FAQ */
+        .faq {
+            padding: 7rem 2rem;
+            background: white;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-soft);
+            padding: 1.75rem;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .faq-item h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 8rem 2rem;
+            background: var(--gradient-primary);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -25%;
+            width: 150%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255,255,255,0.1) 0%, transparent 60%);
+        }
+        
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+        
+        .final-cta h2 .highlight {
+            color: var(--gold-light);
+        }
+        
+        .final-cta > p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .final-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .btn-outline-white {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.4);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-outline-white:hover {
+            border-color: white;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .disclaimer {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+            max-width: 550px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 7rem 2rem;
+            background: var(--bg-purple);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        .contact-info > p {
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        
+        .contact-methods {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+        
+        .contact-methods li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .contact-methods .icon {
+            width: 52px;
+            height: 52px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        .contact-methods a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .form-group { margin-bottom: 1.5rem; }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.9rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.2s;
+            background: var(--bg-soft);
+        }
+        
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+            background: white;
+        }
+        
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        
+        .submit-btn {
+            width: 100%;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 1.1rem;
+            border-radius: 50px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(147, 51, 234, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .footer-brand .logo {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-brand .logo span {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .footer-brand p {
+            color: rgba(255,255,255,0.6);
+            max-width: 300px;
+            line-height: 1.6;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 4rem;
+        }
+        
+        .footer-col h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.5rem; }
+        .footer-col ul a { color: rgba(255,255,255,0.7); transition: color 0.2s; }
+        .footer-col ul a:hover { color: white; }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+        }
+        
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(147, 51, 234, 0.4);
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+        }
+        
+        .sticky-cta:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(147, 51, 234, 0.5);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.75rem; }
+            .hero-image { display: none; }
+            .hero-content { max-width: 100%; }
+            .deep-dive-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .deep-dive-image { order: -1; }
+        }
+        
+        @media (max-width: 768px) {
+            .hero { padding: 7rem 1.5rem 4rem; min-height: auto; }
+            .hero h1 { font-size: 2rem; }
+            .hero-stats { flex-direction: column; gap: 1.5rem; }
+            .section-header h2 { font-size: 1.75rem; }
+            .problems-grid, .services-grid, .testimonials-grid, .faq-grid, .qual-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-timeline { flex-direction: column; gap: 2rem; }
+            .process-step::before, .process-step::after { display: none; }
+            .contact-container { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .footer-top { flex-direction: column; gap: 2rem; }
+            .footer-links { flex-direction: column; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            .final-cta h2 { font-size: 1.75rem; }
+            .logos-grid { gap: 2rem; }
+            .sticky-cta { bottom: 1rem; right: 1rem; padding: 0.9rem 1.25rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">medspa<span>.cpa</span></a>
+            <ul class="nav-links">
+                <li><a href="#problems">Why Switch</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Results</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="tel:5852103242" class="nav-phone">📞 585-210-3242</a></li>
+                <li><a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="nav-cta">Free Strategy Call</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-blob blob-3"></div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=900&fit=crop&q=80" alt="Med Spa Professional">
+            <div class="hero-float-card card-1">
+                <div class="float-card-value">$38,400</div>
+                <div class="float-card-label">Avg. Annual Tax Savings</div>
+            </div>
+            <div class="hero-float-card card-2">
+                <div class="float-card-value">50</div>
+                <div class="float-card-label">States Served</div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">CPA Services Built Exclusively for Med Spas</div>
+                <h1>Stop Leaving Money on the Table. <span class="highlight">Start Keeping It.</span></h1>
+                <p class="hero-subtitle">Your med spa is probably overpaying the IRS by $15,000–$40,000 a year. Not because you're doing anything wrong—because your accountant doesn't understand injectable inventory, sales tax on Botox vs. retail, or how to structure a med spa for maximum tax savings.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">$15K–$40K</span>
+                        <span class="hero-stat-label">Average Annual Tax Savings</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">20+</span>
+                        <span class="hero-stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">50</span>
+                        <span class="hero-stat-label">States Covered</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="btn-hero">Book Your Free Strategy Call <span>→</span></a>
+                    <a href="#problems" class="btn-hero-secondary">See What's Costing You ↓</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGOS BAR -->
+    <div class="logos-bar">
+        <div class="logos-container">
+            <div class="logos-label">Trusted by Med Spas Nationwide</div>
+            <div class="logos-grid">
+                <div class="logo-item">
+                    <div class="icon">🏆</div>
+                    <span>Licensed CPA Firm</span>
+                </div>
+                <div class="logo-item">
+                    <div class="icon">💉</div>
+                    <span>Med Spa Specialists</span>
+                </div>
+                <div class="logo-item">
+                    <div class="icon">📊</div>
+                    <span>Xero Certified</span>
+                </div>
+                <div class="logo-item">
+                    <div class="icon">👥</div>
+                    <span>Gusto Partner</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROBLEMS -->
+    <section class="problems" id="problems">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">⚠️ The Hidden Problem</div>
+                <h2>Here's What's <span class="highlight">Quietly Draining</span> Your Profit</h2>
+                <p>Most med spa owners don't even realize these problems exist. But they're costing you real money—every single month.</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>You're Overpaying the IRS by $15K–$40K/Year</h3>
+                    <p class="problem-desc">The average med spa we audit is overpaying by five figures annually. Not because they're bad at business—because their accountant doesn't know that Allergan rebates are taxable differently than service revenue, or that your Hydrafacial machine qualifies for bonus depreciation, or that your S-Corp election timing matters more than most CPAs realize.</p>
+                    <p class="solution">→ We find every dollar. Legally. Every time.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📉</div>
+                    <h3>Your Books Don't Tell You Anything Useful</h3>
+                    <p class="problem-desc">Botox, Dysport, filler, laser, facials, retail—all lumped together. You can't tell which services are actually profitable. You can't see that your Morpheus8 treatments have a 72% margin while your chemical peels are underwater. You're flying blind and making decisions based on gut feel instead of data.</p>
+                    <p class="solution">→ We build books that actually help you run your business.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔀</div>
+                    <h3>Business and Personal Are Dangerously Tangled</h3>
+                    <p class="problem-desc">Your personal card bought that new laser. Your business account paid for your car payment. It happens. But it's costing you: the IRS loves to disallow expenses they can't clearly trace, and you're setting yourself up for an audit nightmare. The average audit assessment for "inadequate records" is $12,000.</p>
+                    <p class="solution">→ We untangle it and set up systems so it never happens again.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>Sales Tax Is a Ticking Time Bomb</h3>
+                    <p class="problem-desc">Botox injection? Not taxable (it's medical). The syringe you used? Taxable (it's a consumable). The skincare you sold them? Taxable. The skincare you included "free" with a package? Also taxable. Most med spas get this wrong—and the state doesn't send a warning. They send a bill for back taxes plus penalties.</p>
+                    <p class="solution">→ We set it up right so you sleep at night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-value">$2.4M+</span>
+                <span class="stat-label">Client Tax Savings (Last 12 Mo)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">20+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">Xero</span>
+                <span class="stat-label">Certified Partner</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">50</span>
+                <span class="stat-label">States Covered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label primary">💼 What We Do</div>
+                <h2>Everything Your Med Spa Needs, <span class="highlight-primary">In One Place</span></h2>
+                <p>No piecing together 4 different providers. No explaining your business model to someone who doesn't get it.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Tax Preparation & Filing</h3>
+                    <p>Done right. On time. No April scramble. We handle your federal and state returns, estimated payments, and extensions—so you focus on patients, not paperwork.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Proactive Tax Planning</h3>
+                    <p>We don't just file your taxes—we plan them. Quarterly strategy calls. Equipment timing. S-Corp optimization. Retirement funding. We find money before it's gone.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Med Spa Bookkeeping</h3>
+                    <p>Clean books organized the way med spas actually work. Revenue by service type. Cost per treatment. Injectable inventory tracking. Numbers you can actually use to run your business.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Fractional CFO Services</h3>
+                    <p>Strategic financial guidance for practices doing $500K+. Cash flow forecasting. KPI dashboards. Expansion planning. Second location analysis. Growth without the guesswork.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Payroll & HR Compliance</h3>
+                    <p>W-2s for staff. 1099s for independent injectors. Multi-state compliance. Benefits administration. We handle the complexity so you don't think about it.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Entity & Structure Optimization</h3>
+                    <p>S-Corp election timing. LLC setup. Asset protection. Real estate holding companies. The right structure can save $20K+ annually. Most CPAs don't even bring it up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP DIVE -->
+    <section class="deep-dive">
+        <div class="container">
+            <div class="deep-dive-grid">
+                <div class="deep-dive-content">
+                    <h2>We <span class="highlight">Actually Understand</span> the Med Spa Business</h2>
+                    <p>Your current accountant probably asks you to explain what Sculptra is every year. We don't. We know the difference between neurotoxins and dermal fillers. We know that your Allergan and Galderma rebates have tax implications. We know that the medical director agreement affects your entity structure.</p>
+                    
+                    <ul class="knowledge-list">
+                        <li>
+                            <div class="knowledge-icon">✓</div>
+                            <div class="knowledge-text">
+                                <h4>Injectable Inventory Accounting</h4>
+                                <p>Proper COGS tracking for Botox, Dysport, Juvederm, Restylane—by unit, not just by dollar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="knowledge-icon">✓</div>
+                            <div class="knowledge-text">
+                                <h4>Equipment Depreciation Strategy</h4>
+                                <p>Your Morpheus8 and CoolSculpting machines qualify for bonus depreciation. Are you taking it?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="knowledge-icon">✓</div>
+                            <div class="knowledge-text">
+                                <h4>Medical Director Compliance</h4>
+                                <p>The structure of your MD agreement affects your tax position. We've seen it done wrong too many times.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="knowledge-icon">✓</div>
+                            <div class="knowledge-text">
+                                <h4>Revenue Recognition by Service</h4>
+                                <p>Track profitability by treatment type. Know which services drive margin, not just revenue.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="deep-dive-image">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=700&fit=crop&q=80" alt="Med Spa Treatment">
+                    <div class="deep-dive-card">
+                        <div class="deep-dive-card-header">
+                            <div class="deep-dive-card-icon">✓</div>
+                            <span>Industry Expertise</span>
+                        </div>
+                        <p>We've worked with med spas doing $300K to $15M in revenue. We've seen every structure, every mistake, every opportunity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">🚀 Getting Started</div>
+                <h2>It's Simpler Than You Think</h2>
+                <p>No long onboarding. No confusing paperwork. Three steps and you're done.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Book a Free Call</h4>
+                    <p>15 minutes. Tell us about your med spa. We'll tell you honestly if we can help—and how much we think you're leaving on the table.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Get a Custom Plan</h4>
+                    <p>We show you exactly what we'd do, what it costs, and what you'll save. Clear pricing. No jargon. No pressure. Take your time.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>We Handle Everything</h4>
+                    <p>You send us access. We do the work. You get clean books, lower taxes, and your evenings back. That's it.</p>
+                </div>
+            </div>
+            <div class="process-cta">
+                <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="btn-hero">Book Your Free Strategy Call →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUALIFICATION -->
+    <section class="qualification" id="fit">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Be Honest</h2>
+                <p>We're not for everyone. And that's exactly the point.</p>
+            </div>
+            <div class="qual-grid">
+                <div class="qual-card for-you">
+                    <div class="qual-header">
+                        <div class="qual-icon">✓</div>
+                        <h3>This is for you if:</h3>
+                    </div>
+                    <ul class="qual-list">
+                        <li>You own a med spa or aesthetic practice</li>
+                        <li>You're tired of overpaying in taxes (and suspect you are)</li>
+                        <li>You want books that actually help you make decisions</li>
+                        <li>Your current accountant doesn't understand your business</li>
+                        <li>You're ready to grow and need real financial visibility</li>
+                        <li>You value expertise over the cheapest option</li>
+                    </ul>
+                </div>
+                <div class="qual-card not-for-you">
+                    <div class="qual-header">
+                        <div class="qual-icon">✗</div>
+                        <h3>This probably isn't for you if:</h3>
+                    </div>
+                    <ul class="qual-list">
+                        <li>You just want the cheapest accountant you can find</li>
+                        <li>You like the once-a-year, then-they-vanish approach</li>
+                        <li>You're completely happy with how things are going</li>
+                        <li>You don't want to change anything about your finances</li>
+                        <li>You're not willing to invest in doing it right</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qual-cta">
+                <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="btn-primary">Book Your Free Strategy Call →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">⭐ Real Results</div>
+                <h2>Med Spa Owners Who Made the Switch</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I was tracking everything in spreadsheets between Botox appointments. Now I actually know my real numbers—which services are profitable, which aren't. And we saved over $38,000 last year. That's not a typo."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80" alt="Jamie R." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Jamie R.</h4>
+                            <p>Owner, Glow Aesthetics • Dallas, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Flint helped us open our second location. They caught things our old bookkeeper missed for years—including a sales tax issue that would have cost us $40K if the state had found it first. The clarity alone was worth it."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&q=80" alt="Dana M." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Dana M.</h4>
+                            <p>Founder, Radiance Med Spa • Scottsdale, AZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"I used to dread tax season. Stay up late, scramble for documents, pray nothing was wrong. Now I just send them my stuff and trust it's handled. No surprises, no scrambling in April. It's the first time in 6 years I haven't been stressed."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&q=80" alt="Priya S." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Priya S.</h4>
+                            <p>Owner, The Aesthetic Studio • Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Why do I need a CPA who specializes in med spas?</h3>
+                    <p>Med spas have unique tax situations: injectable inventory tracking, equipment depreciation, sales tax on products vs. services, 1099 vs. W-2 injector classification, medical director agreements. A generalist will miss deductions and make mistakes that cost you $15K–$40K annually.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much can I actually save?</h3>
+                    <p>Most med spas we work with save $15,000–$40,000 per year through proper entity structure, deduction optimization, and proactive tax planning. We'll give you a realistic estimate on your first call—no hype.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>I already have an accountant. What's wrong with them?</h3>
+                    <p>Maybe nothing. But if they don't specialize in med spas, they're almost certainly missing industry-specific strategies. We see it every week. The first call is free—we'll tell you honestly if switching makes sense for your situation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with new med spas?</h3>
+                    <p>Yes. Setting up the right entity structure and accounting systems from day one saves massive headaches (and money) later. If you're just starting, that's actually the best time to get this right.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does pricing work?</h3>
+                    <p>Flat monthly fees. Not hourly billing that punishes you for asking questions. You'll know exactly what you pay before we start—no surprises. We'll discuss pricing on your strategy call based on your specific needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm in a state you don't serve?</h3>
+                    <p>We serve med spas in all 50 states. Everything is virtual—we work with practices from New York to California to everywhere in between. No need to be local.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="final-cta-content">
+            <h2>Stop Overpaying. <span class="highlight">Start Keeping More.</span></h2>
+            <p>Books you can trust. A team that actually gets your business. Tax savings you'll feel.</p>
+            <div class="final-cta-buttons">
+                <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="btn-white">Book Your Free Strategy Call →</a>
+                <a href="tel:5852103242" class="btn-outline-white">📞 Call 585-210-3242</a>
+            </div>
+            <p class="disclaimer">Results vary based on your specific situation. Savings examples are illustrative and based on actual client results, but are not guarantees. We use legal, IRS-compliant strategies to help you pay only what you legally owe—nothing more.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Talk</h2>
+                <p>Not ready for a call? Send us a message. We respond within one business day—usually faster.</p>
+                <ul class="contact-methods">
+                    <li>
+                        <div class="icon">📞</div>
+                        <a href="tel:5852103242">585-210-3242</a>
+                    </li>
+                    <li>
+                        <div class="icon">✉️</div>
+                        <a href="mailto:advisory@medspa.cpa">advisory@medspa.cpa</a>
+                    </li>
+                </ul>
+                <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="btn-primary">Book a Free Strategy Call</a>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/xeedvgkn" method="POST">
+                <input type="hidden" name="_source" value="medspa.cpa-v3-light">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" placeholder="Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="jane@yourmedspa.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" placeholder="(555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label>Med Spa Name</label>
+                        <input type="text" name="medspa" placeholder="Your Practice Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>What's your biggest financial frustration right now?</label>
+                    <textarea name="message" placeholder="Taxes too high? Books a mess? Not sure which services are actually profitable? Tell us what's keeping you up at night..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">medspa<span>.cpa</span></div>
+                    <p>Specialized CPA and accounting services built exclusively for med spas and aesthetic practices. Part of Flint & Associates.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Tax Planning</a></li>
+                            <li><a href="#services">Bookkeeping</a></li>
+                            <li><a href="#services">Fractional CFO</a></li>
+                            <li><a href="#services">Payroll</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#fit">About</a></li>
+                            <li><a href="#testimonials">Results</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:5852103242">585-210-3242</a></li>
+                            <li><a href="mailto:advisory@medspa.cpa">advisory@medspa.cpa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Flint & Associates, CPA Firm. All rights reserved.</p>
+                <p>Based in New York. Serving med spas in all 50 states.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA -->
+    <a href="https://app.fyxer.com/e/mark-flint-aeb/30" class="sticky-cta">📞 Free Strategy Call</a>
+</body>
+</html>
